@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kaza Verde | Produtos naturais e suplementos em Jacareí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8f1;--ink:#16271c;--muted:#4d6152;--green:#1f5a36;--deep:#173d28;--gold:#e9a919;--card:#e6eedb;--onDeep:#f6f8f1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1e15;--ink:#e9f2e5;--muted:#a3bba9;--green:#6cc48a;--deep:#153a27;--card:#163526}}
+:root[data-theme="dark"]{--bg:#0e1e15;--ink:#e9f2e5;--muted:#a3bba9;--green:#6cc48a;--deep:#153a27;--card:#163526}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;gap:1rem}
+nav b{font:800 1.2rem "Bricolage Grotesque",sans-serif}
+.btn{display:inline-block;background:var(--gold);color:#221803;text-decoration:none;font-weight:500;padding:.85rem 1.4rem;border-radius:999px}
+nav .btn{padding:.55rem 1rem;font-size:.95rem}
+.btn.ghost{background:transparent;color:inherit;border:2px solid currentColor;padding:.75rem 1.3rem}
+.hero{padding:2rem 0 3.5rem}
+.hero h1{font-weight:800;font-size:clamp(2.6rem,10vw,5.6rem);letter-spacing:-.03em;color:var(--green);max-width:14ch}
+.hero p{max-width:40ch;font-size:1.2rem;color:var(--muted);margin:1.4rem 0 2rem}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.tags{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:2.2rem;padding:0;list-style:none}
+.tags li{background:var(--card);padding:.45rem 1rem;border-radius:999px;font-weight:500;font-size:.95rem}
+section{padding:3.5rem 0}
+h2{font-weight:800;font-size:clamp(1.9rem,6vw,3rem);letter-spacing:-.02em;margin-bottom:1.5rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.item{background:var(--card);padding:1.5rem;border-radius:1.6rem 1.6rem 1.6rem .4rem}
+.item:nth-child(even){border-radius:1.6rem 1.6rem .4rem 1.6rem}
+.item h3{font-size:1.35rem;margin-bottom:.5rem}
+.item p{margin:0;color:var(--muted)}
+.band{background:var(--deep);color:var(--onDeep)}
+.band .wrap{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.band p{font-size:1.15rem;max-width:46ch;margin:0 0 1rem}
+.band h2{color:var(--onDeep)}
+.reviews{grid-column:1/-1;border-top:1px solid rgba(246,248,241,.25);padding-top:2rem}
+.reviews h3{font-size:1.5rem;margin-bottom:1rem;color:var(--onDeep)}
+.rgrid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-bottom:1rem}
+.rev{margin:0;background:rgba(246,248,241,.09);border-radius:1.4rem 1.4rem 1.4rem .4rem;padding:1.3rem;display:flex;flex-direction:column;gap:.6rem}
+.rev:nth-child(even){border-radius:1.4rem 1.4rem .4rem 1.4rem}
+.stars{color:var(--gold);letter-spacing:.15em;font-size:1.1rem}
+.rev blockquote{margin:0;font-size:1.02rem;line-height:1.55;flex:1}
+.rev figcaption{font-weight:500;opacity:.9}
+.src{opacity:.75;font-size:.9rem;margin:0 0 1.2rem}
+.reviews .cta{margin-top:.5rem}
+.hours{list-style:none;padding:0;margin:0}
+.hours li{display:flex;justify-content:space-between;gap:1.5rem;padding:.8rem 0;border-bottom:1px solid rgba(246,248,241,.25)}
+.hours li span:first-child{font-weight:500}
+.hours li span:last-child{text-align:right}
+.b2b{border:2px solid var(--gold);border-radius:1.6rem;padding:1.6rem}
+.b2b h3{font-size:1.5rem;margin-bottom:.6rem;color:var(--gold)}
+.b2b p{margin:0 0 1.2rem;font-size:1.05rem}
+dl{display:grid;grid-template-columns:auto 1fr;gap:.7rem 1.5rem;margin:0 0 1.8rem}
+dt{font-weight:500}
+dd{margin:0;color:var(--muted)}
+dd a{color:var(--green);font-weight:500}
+footer{padding:2rem 0;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav aria-label="Principal">
+    <b>Kaza Verde</b>
+    <a class="btn" href="https://wa.me/5512997919001">WhatsApp</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <h1>Produtos naturais e suplementos em Jacareí</h1>
+    <p>Alimentação saudável no centro da cidade, para o dia a dia e para quem tem restrições alimentares.</p>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/5512997919001">Chamar no WhatsApp</a>
+      <a class="btn ghost" href="#visite">Como chegar</a>
+    </div>
+    <ul class="tags" aria-label="Categorias">
+      <li>Sem glúten</li><li>Sem lactose</li><li>Veganos</li><li>Orgânicos</li><li>Diet e light</li><li>Vitaminas</li><li>Suplementos</li>
+    </ul>
+  </div>
+</div>
+
+<section id="produtos">
+  <div class="wrap">
+    <h2>O que você encontra na loja</h2>
+    <div class="grid">
+      <article class="item"><h3>Produtos naturais</h3><p>Alimentos e itens do dia a dia com ingredientes mais simples.</p></article>
+      <article class="item"><h3>Sem glúten e sem lactose</h3><p>Opções para quem precisa ou prefere evitar esses ingredientes.</p></article>
+      <article class="item"><h3>Veganos e orgânicos</h3><p>Alternativas vegetais e produtos de cultivo orgânico.</p></article>
+      <article class="item"><h3>Diet e light</h3><p>Escolhas para quem cuida da alimentação sem abrir mão do sabor.</p></article>
+      <article class="item"><h3>Vitaminas e suplementos</h3><p>Suplementação para rotina, treino e bem-estar.</p></article>
+      <article class="item"><h3>Cuidados com a pele</h3><p>Linhas naturais de cuidado, como óleos e cosméticos.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div>
+      <h2>Sobre a Kaza Verde</h2>
+      <p>Desde 2004 no Centro de Jacareí, a Kaza Verde reúne produtos naturais, sem glúten, sem lactose, veganos, orgânicos, diet e light, além de vitaminas e suplementos.</p>
+      <p>Nosso objetivo é facilitar a escolha de quem quer comer melhor ou precisa de opções para uma restrição alimentar. Conte o que você procura e a equipe ajuda a encontrar o produto certo.</p>
+    </div>
+    <div class="b2b">
+      <h3>Varejo e atacado</h3>
+      <p>Compre para o seu consumo ou para revender. Fale com a gente e peça condições de atacado.</p>
+      <a class="btn" href="https://wa.me/5512997919001">Pedir condições</a>
+    </div>
+    <div class="reviews">
+      <h3>O que dizem os clientes</h3>
+      <div class="rgrid">
+        <figure class="rev"><div class="stars" role="img" aria-label="5 estrelas">★★★★★</div><blockquote>A melhor loja de produtos naturais da cidade, sempre passo lá pra adquirir meus produtos de rotina!!</blockquote><figcaption>Jesse N.</figcaption></figure>
+        <figure class="rev"><div class="stars" role="img" aria-label="5 estrelas">★★★★★</div><blockquote>Sou cliente a mais de 10 anos e super indico, produtos de qualidade. […] Daniel e sua equipe tem me ajudado muito ao longo desses anos com suas indicações de produto.</blockquote><figcaption>Roseli P.</figcaption></figure>
+        <figure class="rev"><div class="stars" role="img" aria-label="5 estrelas">★★★★★</div><blockquote>Loja muito organizada, muita variedade de produtos, atendimento ótimo, preço ótimo, pessoal simpático e prontos para ajudar.</blockquote><figcaption>Gabriel M.</figcaption></figure>
+        <figure class="rev"><div class="stars" role="img" aria-label="5 estrelas">★★★★★</div><blockquote>Excelente para as compras de suplementos, e muitas outras opções naturais. Um ótimo atendimento.</blockquote><figcaption>Ana Paula</figcaption></figure>
+        <figure class="rev"><div class="stars" role="img" aria-label="5 estrelas">★★★★★</div><blockquote>Ótimo atendimento. Lugar agradável, com produtos diversos para cuidarmos da nossa saúde, profissionais competentes. Eu gostei.</blockquote><figcaption>Fatima N.</figcaption></figure>
+        <figure class="rev"><div class="stars" role="img" aria-label="5 estrelas">★★★★★</div><blockquote>Atendimento personalizado, excelente variedade e qualidade dos produtos.</blockquote><figcaption>Taís M.</figcaption></figure>
+      </div>
+      <p class="src">Avaliações de clientes no Google.</p>
+      <div class="cta">
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Kaza+Verde+Rua+Dr+Pompilio+Mercadante+203+Jacarei+SP">Ver todas no Google</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visite">
+  <div class="wrap">
+    <h2>Visite a Kaza Verde</h2>
+    <dl>
+      <dt>Endereço</dt><dd>Rua Dr. Pompílio Mercadante, 203, Centro, Jacareí, SP, CEP 12308-510</dd>
+      <dt>Telefone</dt><dd><a href="tel:+551239612001">(12) 3961-2001</a></dd>
+      <dt>WhatsApp</dt><dd><a href="https://wa.me/5512997919001">(12) 99791-9001</a></dd>
+      <dt>Instagram</dt><dd><a href="https://www.instagram.com/kazaverdeoficial/">@kazaverdeoficial</a></dd>
+      <dt>Site</dt><dd><a href="https://kazaverde.com.br/">kazaverde.com.br</a></dd>
+      <dt>Horário</dt><dd>Seg a qui 8h30 às 18h30. Sexta fecha 40 min antes do pôr do sol. Sábado fechado. Domingo 9h30 às 12h30.</dd>
+    </dl>
+    <div class="cta">
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Kaza+Verde+Rua+Dr+Pompilio+Mercadante+203+Jacarei+SP">Abrir no mapa</a>
+      <a class="btn ghost" href="https://wa.me/5512997919001">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© Kaza Verde, Jacareí, SP.</div></footer>
+</body>
+</html>
